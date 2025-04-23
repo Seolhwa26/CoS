@@ -406,7 +406,7 @@ public class freeBoardController {
 			
 			String rank = service.getRank(dto);
 			
-			Object nbcSeq = service.getNextbcSeq(bSeq,Integer.parseInt(rank)+1+"");
+			Object nbcSeq = service.getNextbcSeq(bSeq,Integer.parseInt(rank)+1+"", bcRef);
 			
 			Object nbcLevel = null;
 			if (nbcSeq != null)
