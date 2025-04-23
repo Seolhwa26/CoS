@@ -458,7 +458,7 @@ public class freeBoardController {
 					try {
 						nextLevel = nextdto.getBcLevel();
 						inextLevel = Integer.parseInt(nextLevel);
-						if (!nextdto.getBcStep().equals(step+"") || ibcLevel > inextLevel) {
+						if (ibcLevel > inextLevel) {
 							dto.setBcStep(step+"");
 							dto.setBcLevel(ibcLevel+"");
 							flag = false;
